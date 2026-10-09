@@ -1,0 +1,2364 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Refrigeração El Shaday - Refricom | Manutenção e Conserto Especializado</title>
+    <meta name="description" content="Manutenção técnica especializada em geladeiras, freezers, ar-condicionado, câmaras frias, balcões e máquinas de gelo em Macapá e Santana. Orçamento rápido pelo WhatsApp." />
+    <meta name="theme-color" content="#06121e" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Refrigeração El Shaday - Refricom | Especialistas em Refrigeração" />
+    <meta property="og:description" content="Seu equipamento gelando de novo, com garantia! Geladeiras, ar-condicionado, câmaras frias e balcões comerciais. Atendimento rápido." />
+    <meta property="og:image" content="https://i.postimg.cc/5ywQWkvn/IMG-9379.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Refrigeração El Shaday - Refricom" />
+    <meta name="twitter:description" content="Manutenção técnica especializada em refrigeração residencial e comercial." />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org Rich Snippet -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Refrigeração El Shaday - Refricom",
+        "image": "https://i.postimg.cc/5ywQWkvn/IMG-9379.png",
+        "telephone": "+5596991386096",
+        "url": "https://wa.link/uy1fky",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Macapá",
+          "addressRegion": "AP",
+          "addressCountry": "BR"
+        },
+        "description": "Manutenção técnica especializada em refrigeração residencial e comercial: geladeiras, freezers, ar condicionado e câmaras frias.",
+        "openingHours": "Mo-Fr 07:30-18:00, Sa 08:00-13:00"
+      }
+    </script>
+
+    <style>
+      :root {
+        --bg-main: #06111c;
+        --bg-card: rgba(13, 29, 44, 0.85);
+        --bg-card-hover: rgba(20, 42, 64, 0.95);
+        --border-subtle: rgba(56, 189, 248, 0.18);
+        --border-focus: #00d2ff;
+        --cyan-primary: #00d2ff;
+        --cyan-glow: rgba(0, 210, 255, 0.35);
+        --blue-accent: #0284c7;
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        --text-soft: #cbd5e1;
+        --green-whatsapp: #25d366;
+        --red-urgent: #ef4444;
+        --amber-warning: #f59e0b;
+        --radius-card: 18px;
+        --radius-btn: 14px;
+        --font-display: 'Outfit', sans-serif;
+        --font-body: 'Plus Jakarta Sans', sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: 
+          radial-gradient(circle at 50% 0%, rgba(0, 180, 216, 0.18) 0%, transparent 60%),
+          radial-gradient(circle at 10% 40%, rgba(2, 132, 199, 0.08) 0%, transparent 50%),
+          radial-gradient(circle at 90% 80%, rgba(0, 210, 255, 0.06) 0%, transparent 50%);
+        background-attachment: fixed;
+        overflow-x: hidden;
+        line-height: 1.5;
+        padding: 0;
+      }
+
+      /* Container mobile-first centralizado */
+      .app-wrapper {
+        width: 100%;
+        max-width: 480px;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 24px 18px 48px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      /* Ambient Glow Effect */
+      .ambient-glow {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 280px;
+        height: 280px;
+        background: radial-gradient(circle, rgba(0, 210, 255, 0.22) 0%, transparent 70%);
+        filter: blur(40px);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* Header */
+      .header {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 24px;
+      }
+
+      .logo-container {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        padding: 4px;
+        background: linear-gradient(135deg, rgba(0, 210, 255, 0.8), rgba(2, 132, 199, 0.3), rgba(0, 210, 255, 0.6));
+        box-shadow: 0 0 25px var(--cyan-glow), 0 8px 20px rgba(0, 0, 0, 0.5);
+        margin-bottom: 16px;
+        animation: subtlePulse 4s ease-in-out infinite;
+      }
+
+      @keyframes subtlePulse {
+        0%, 100% { box-shadow: 0 0 20px rgba(0, 210, 255, 0.3), 0 8px 20px rgba(0, 0, 0, 0.5); }
+        50% { box-shadow: 0 0 32px rgba(0, 210, 255, 0.55), 0 8px 24px rgba(0, 0, 0, 0.6); }
+      }
+
+      .logo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        background-color: #081a28;
+        display: block;
+      }
+
+      .brand-title {
+        font-family: var(--font-display);
+        font-size: 1.45rem;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        margin-bottom: 4px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .brand-subtitle {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--cyan-primary);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 8px;
+      }
+
+      .brand-slogan {
+        font-size: 0.92rem;
+        color: var(--text-soft);
+        max-width: 340px;
+        line-height: 1.4;
+        margin-bottom: 16px;
+      }
+
+      /* Badges de Confiança */
+      .trust-badges {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 12px;
+        background: rgba(14, 38, 58, 0.7);
+        border: 1px solid rgba(56, 189, 248, 0.22);
+        border-radius: 999px;
+        font-size: 0.73rem;
+        font-weight: 600;
+        color: #e0f2fe;
+        backdrop-filter: blur(8px);
+        letter-spacing: 0.01em;
+      }
+
+      .badge svg {
+        width: 13px;
+        height: 13px;
+        color: var(--cyan-primary);
+        flex-shrink: 0;
+      }
+
+      /* Status de Atendimento */
+      .live-status-bar {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 14px;
+        background: rgba(8, 24, 38, 0.9);
+        border: 1px solid rgba(16, 185, 129, 0.35);
+        border-radius: 999px;
+        font-size: 0.72rem;
+        color: #a7f3d0;
+        margin-top: 6px;
+        cursor: pointer;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+
+      .live-status-bar:hover {
+        transform: translateY(-1px);
+        border-color: rgba(16, 185, 129, 0.6);
+      }
+
+      .status-indicator-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #10b981;
+        box-shadow: 0 0 8px #10b981;
+        animation: blink 2s infinite ease-in-out;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(0.85); }
+      }
+
+      /* Grid / Lista de Ações */
+      .action-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+      }
+
+      /* Card Padrão */
+      .action-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 18px;
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-card);
+        text-decoration: none;
+        color: inherit;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+                    border-color 0.2s ease, 
+                    box-shadow 0.2s ease, 
+                    background-color 0.2s ease;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .action-card:hover {
+        transform: translateY(-2px);
+        background: var(--bg-card-hover);
+        border-color: rgba(0, 210, 255, 0.45);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 15px rgba(0, 210, 255, 0.1);
+      }
+
+      .action-card:active {
+        transform: scale(0.985);
+      }
+
+      .card-left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex: 1;
+        min-width: 0;
+      }
+
+      .card-icon-box {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 210, 255, 0.1);
+        border: 1px solid rgba(0, 210, 255, 0.25);
+        color: var(--cyan-primary);
+        flex-shrink: 0;
+        transition: transform 0.2s ease;
+      }
+
+      .action-card:hover .card-icon-box {
+        transform: scale(1.05);
+      }
+
+      .card-icon-box svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .card-text {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+      }
+
+      .card-title {
+        font-family: var(--font-display);
+        font-size: 0.98rem;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .card-desc {
+        font-size: 0.77rem;
+        color: var(--text-muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 1px;
+      }
+
+      .card-chevron {
+        color: var(--text-muted);
+        opacity: 0.6;
+        transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+        flex-shrink: 0;
+        margin-left: 10px;
+      }
+
+      .action-card:hover .card-chevron {
+        transform: translateX(3px);
+        opacity: 1;
+        color: var(--cyan-primary);
+      }
+
+      /* Card Principal: RELATAR PROBLEMA (Destaque Maior) */
+      .card-primary-featured {
+        padding: 20px 20px;
+        background: linear-gradient(135deg, rgba(2, 132, 199, 0.35) 0%, rgba(14, 40, 64, 0.95) 100%);
+        border: 1.5px solid rgba(0, 210, 255, 0.55);
+        box-shadow: 0 8px 28px rgba(0, 180, 216, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      }
+
+      .card-primary-featured::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--cyan-primary), transparent);
+        animation: shimmer 3s infinite;
+      }
+
+      @keyframes shimmer {
+        0% { opacity: 0.3; }
+        50% { opacity: 1; }
+        100% { opacity: 0.3; }
+      }
+
+      .card-primary-featured .card-icon-box {
+        width: 50px;
+        height: 50px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #00d2ff, #0284c7);
+        color: #06111c;
+        border: none;
+        box-shadow: 0 4px 14px rgba(0, 210, 255, 0.4);
+      }
+
+      .card-primary-featured .card-icon-box svg {
+        width: 25px;
+        height: 25px;
+      }
+
+      .card-primary-featured .card-title {
+        font-size: 1.1rem;
+        color: #ffffff;
+      }
+
+      .card-primary-featured .card-desc {
+        color: #bae6fd;
+        font-size: 0.81rem;
+      }
+
+      .featured-badge {
+        position: absolute;
+        top: 10px;
+        right: 14px;
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #06111c;
+        background: var(--cyan-primary);
+        padding: 2px 8px;
+        border-radius: 999px;
+      }
+
+      /* Card Urgente */
+      .card-urgent {
+        border-color: rgba(239, 68, 68, 0.4);
+        background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(18, 30, 44, 0.88));
+      }
+
+      .card-urgent .card-icon-box {
+        background: rgba(239, 68, 68, 0.18);
+        border-color: rgba(239, 68, 68, 0.4);
+        color: #f87171;
+      }
+
+      .card-urgent:hover {
+        border-color: rgba(239, 68, 68, 0.7);
+        box-shadow: 0 8px 24px rgba(239, 68, 68, 0.2);
+      }
+
+      .card-urgent .card-desc {
+        color: #fca5a5;
+      }
+
+      /* Card WhatsApp */
+      .card-whatsapp .card-icon-box {
+        background: rgba(37, 211, 102, 0.15);
+        border-color: rgba(37, 211, 102, 0.35);
+        color: #25d366;
+      }
+
+      .card-whatsapp:hover {
+        border-color: rgba(37, 211, 102, 0.5);
+      }
+
+      /* Card Instagram */
+      .card-instagram .card-icon-box {
+        background: linear-gradient(135deg, rgba(225, 48, 108, 0.15), rgba(131, 58, 180, 0.15));
+        border-color: rgba(225, 48, 108, 0.35);
+        color: #f472b6;
+      }
+
+      /* Seção de Especialidades Rápidas */
+      .specialties-section {
+        margin-top: 24px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        padding: 0 4px;
+      }
+
+      .section-title {
+        font-family: var(--font-display);
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--cyan-primary);
+      }
+
+      .section-caption {
+        font-size: 0.72rem;
+        color: var(--text-muted);
+      }
+
+      .specialties-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+
+      .spec-chip {
+        background: rgba(10, 25, 40, 0.75);
+        border: 1px solid rgba(56, 189, 248, 0.14);
+        border-radius: 12px;
+        padding: 10px 8px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: #e2e8f0;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+        cursor: pointer;
+      }
+
+      .spec-chip:hover {
+        transform: translateY(-2px);
+        border-color: rgba(0, 210, 255, 0.4);
+        background: rgba(14, 34, 52, 0.85);
+      }
+
+      .spec-chip svg {
+        width: 20px;
+        height: 20px;
+        color: var(--cyan-primary);
+      }
+
+      /* Footer */
+      .footer {
+        margin-top: 32px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .footer-location {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--text-soft);
+        font-weight: 500;
+      }
+
+      .footer-location svg {
+        width: 14px;
+        height: 14px;
+        color: var(--cyan-primary);
+      }
+
+      .footer-copyright {
+        font-size: 0.7rem;
+        opacity: 0.7;
+      }
+
+      /* ============================================================
+         MODAIS & BOTTOM-SHEETS
+      ============================================================ */
+      .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(2, 6, 12, 0.75);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .modal-backdrop.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .bottom-sheet {
+        width: 100%;
+        max-width: 480px;
+        max-height: 92vh;
+        background: #091724;
+        border-top: 1.5px solid rgba(56, 189, 248, 0.35);
+        border-radius: 26px 26px 0 0;
+        box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.75);
+        display: flex;
+        flex-direction: column;
+        transform: translateY(100%);
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        overflow: hidden;
+      }
+
+      .modal-backdrop.active .bottom-sheet {
+        transform: translateY(0);
+      }
+
+      .sheet-handle-bar {
+        width: 100%;
+        padding: 12px 0 6px;
+        display: flex;
+        justify-content: center;
+        cursor: grab;
+      }
+
+      .sheet-pill {
+        width: 42px;
+        height: 4.5px;
+        background: rgba(148, 163, 184, 0.35);
+        border-radius: 999px;
+      }
+
+      .sheet-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 20px 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .sheet-header-title {
+        font-family: var(--font-display);
+        font-size: 1.12rem;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .sheet-close-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.07);
+        border: none;
+        color: var(--text-soft);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.15s ease, color 0.15s ease;
+      }
+
+      .sheet-close-btn:hover {
+        background: rgba(255, 255, 255, 0.15);
+        color: #ffffff;
+      }
+
+      /* Barra de Progresso do Wizard */
+      .wizard-progress-bar-container {
+        padding: 12px 20px 8px;
+        background: rgba(5, 14, 23, 0.5);
+      }
+
+      .wizard-steps-indicator {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--text-muted);
+      }
+
+      .wizard-steps-indicator span.active {
+        color: var(--cyan-primary);
+      }
+
+      .wizard-track {
+        width: 100%;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 999px;
+        overflow: hidden;
+      }
+
+      .wizard-fill {
+        height: 100%;
+        width: 20%;
+        background: linear-gradient(90deg, #0284c7, #00d2ff);
+        border-radius: 999px;
+        transition: width 0.3s ease;
+      }
+
+      /* Conteúdo rolável do Bottom Sheet */
+      .sheet-body {
+        padding: 18px 20px 24px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      /* Form controls & Step Containers */
+      .step-view {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        animation: fadeIn 0.25s ease-out;
+      }
+
+      .step-view.active {
+        display: flex;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .step-headline {
+        font-family: var(--font-display);
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 2px;
+      }
+
+      .step-subtext {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        line-height: 1.35;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .form-label {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--text-soft);
+      }
+
+      .form-input, .form-textarea, .form-select {
+        width: 100%;
+        background: rgba(13, 29, 44, 0.9);
+        border: 1px solid rgba(56, 189, 248, 0.25);
+        border-radius: var(--radius-btn);
+        padding: 12px 14px;
+        font-family: var(--font-body);
+        font-size: 0.88rem;
+        color: #ffffff;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .form-input:focus, .form-textarea:focus, .form-select:focus {
+        border-color: var(--cyan-primary);
+        box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.15);
+      }
+
+      .form-input::placeholder, .form-textarea::placeholder {
+        color: rgba(148, 163, 184, 0.55);
+      }
+
+      .form-textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      /* Grid de Seleção de Equipamento */
+      .equipment-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .equip-btn {
+        background: rgba(13, 29, 44, 0.8);
+        border: 1px solid rgba(56, 189, 248, 0.18);
+        border-radius: 12px;
+        padding: 12px 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        color: var(--text-soft);
+        font-size: 0.82rem;
+        font-weight: 600;
+        text-align: left;
+        transition: all 0.2s ease;
+      }
+
+      .equip-btn svg {
+        width: 20px;
+        height: 20px;
+        color: var(--cyan-primary);
+        flex-shrink: 0;
+      }
+
+      .equip-btn:hover {
+        background: rgba(19, 42, 64, 0.9);
+        border-color: rgba(0, 210, 255, 0.4);
+      }
+
+      .equip-btn.selected {
+        background: rgba(0, 210, 255, 0.15);
+        border-color: var(--cyan-primary);
+        color: #ffffff;
+        box-shadow: 0 0 12px rgba(0, 210, 255, 0.2);
+      }
+
+      /* Chips de Sintomas e Seleções Rápidas */
+      .chips-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+
+      .chip-btn {
+        background: rgba(13, 29, 44, 0.8);
+        border: 1px solid rgba(56, 189, 248, 0.18);
+        border-radius: 999px;
+        padding: 7px 13px;
+        font-size: 0.77rem;
+        font-weight: 500;
+        color: var(--text-soft);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: all 0.18s ease;
+        user-select: none;
+      }
+
+      .chip-btn:hover {
+        border-color: rgba(0, 210, 255, 0.4);
+        color: #ffffff;
+      }
+
+      .chip-btn.selected {
+        background: var(--cyan-primary);
+        color: #06111c;
+        font-weight: 700;
+        border-color: var(--cyan-primary);
+        box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+      }
+
+      /* Níveis de Urgência */
+      .urgency-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .urgency-card {
+        padding: 12px 14px;
+        border-radius: 14px;
+        background: rgba(13, 29, 44, 0.75);
+        border: 1px solid rgba(56, 189, 248, 0.18);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.2s ease;
+      }
+
+      .urgency-card-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .urgency-card-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .urgency-card-title {
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .urgency-card-desc {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+      }
+
+      .urgency-card.selected {
+        border-color: var(--cyan-primary);
+        background: rgba(0, 210, 255, 0.12);
+        box-shadow: 0 0 12px rgba(0, 210, 255, 0.18);
+      }
+
+      .urgency-card[data-level="urgente"].selected {
+        border-color: #f59e0b;
+        background: rgba(245, 158, 11, 0.12);
+        box-shadow: 0 0 12px rgba(245, 158, 11, 0.2);
+      }
+
+      .urgency-card[data-level="emergencia"].selected {
+        border-color: #ef4444;
+        background: rgba(239, 68, 68, 0.15);
+        box-shadow: 0 0 12px rgba(239, 68, 68, 0.25);
+      }
+
+      /* Radio Check Indicator */
+      .check-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid rgba(148, 163, 184, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: all 0.2s ease;
+      }
+
+      .urgency-card.selected .check-circle {
+        border-color: var(--cyan-primary);
+        background: var(--cyan-primary);
+      }
+
+      .urgency-card[data-level="urgente"].selected .check-circle {
+        border-color: #f59e0b;
+        background: #f59e0b;
+      }
+
+      .urgency-card[data-level="emergencia"].selected .check-circle {
+        border-color: #ef4444;
+        background: #ef4444;
+      }
+
+      .check-circle::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #06111c;
+        display: none;
+      }
+
+      .urgency-card.selected .check-circle::after {
+        display: block;
+      }
+
+      /* Resumo do Pedido */
+      .summary-box {
+        background: rgba(13, 29, 44, 0.95);
+        border: 1px solid rgba(56, 189, 248, 0.25);
+        border-radius: 14px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 0.83rem;
+      }
+
+      .summary-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .summary-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .summary-label {
+        color: var(--text-muted);
+        font-weight: 500;
+        flex-shrink: 0;
+      }
+
+      .summary-val {
+        color: #ffffff;
+        font-weight: 600;
+        text-align: right;
+        word-break: break-word;
+      }
+
+      /* Barra de Ações Inferior no Modal */
+      .sheet-footer-actions {
+        padding: 14px 20px 24px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        gap: 10px;
+        background: #071522;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px 20px;
+        border-radius: var(--radius-btn);
+        font-family: var(--font-display);
+        font-size: 0.94rem;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+        transition: all 0.2s ease;
+        text-decoration: none;
+      }
+
+      .btn:active {
+        transform: scale(0.98);
+      }
+
+      .btn-primary {
+        flex: 2;
+        background: linear-gradient(135deg, #00d2ff 0%, #0284c7 100%);
+        color: #06111c;
+        box-shadow: 0 4px 18px rgba(0, 210, 255, 0.35);
+      }
+
+      .btn-primary:hover {
+        box-shadow: 0 6px 24px rgba(0, 210, 255, 0.5);
+      }
+
+      .btn-secondary {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.08);
+        color: var(--text-soft);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.14);
+        color: #ffffff;
+      }
+
+      .btn-whatsapp-send {
+        flex: 1;
+        background: #25d366;
+        color: #052e16;
+        box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);
+      }
+
+      .btn-whatsapp-send:hover {
+        background: #22c55e;
+        box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55);
+      }
+
+      /* Tela de Sucesso */
+      .success-view {
+        text-align: center;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .success-icon-wrap {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: rgba(37, 211, 102, 0.18);
+        border: 2px solid #25d366;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #25d366;
+        box-shadow: 0 0 25px rgba(37, 211, 102, 0.35);
+      }
+
+      .success-icon-wrap svg {
+        width: 36px;
+        height: 36px;
+      }
+
+      .success-title {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .success-callout {
+        background: rgba(0, 210, 255, 0.1);
+        border: 1px solid rgba(0, 210, 255, 0.3);
+        border-radius: 14px;
+        padding: 14px 16px;
+        font-size: 0.84rem;
+        color: #e0f2fe;
+        line-height: 1.45;
+        text-align: left;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+
+      .success-callout svg {
+        width: 24px;
+        height: 24px;
+        color: var(--cyan-primary);
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      /* Modal de Horário */
+      .schedule-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 14px;
+        background: rgba(13, 29, 44, 0.7);
+        border: 1px solid rgba(56, 189, 248, 0.16);
+        border-radius: 12px;
+        font-size: 0.84rem;
+      }
+
+      .schedule-day {
+        color: var(--text-soft);
+        font-weight: 600;
+      }
+
+      .schedule-hours {
+        color: #ffffff;
+        font-weight: 700;
+      }
+
+      .schedule-highlight {
+        background: rgba(239, 68, 68, 0.1);
+        border-color: rgba(239, 68, 68, 0.3);
+      }
+
+      .schedule-highlight .schedule-day {
+        color: #fca5a5;
+      }
+
+      .schedule-highlight .schedule-hours {
+        color: #f87171;
+      }
+
+      /* Utilitários */
+      .text-cyan { color: var(--cyan-primary); }
+      .hidden { display: none !important; }
+
+      /* Responsividade & Ajustes de Teclado */
+      @media (max-width: 360px) {
+        .brand-title { font-size: 1.25rem; }
+        .action-card { padding: 14px 14px; }
+        .equipment-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container Principal do Biosite -->
+    <div class="app-wrapper">
+      <div class="ambient-glow" aria-hidden="true"></div>
+
+      <!-- 1. Cabeçalho -->
+      <header class="header">
+        <div class="logo-container">
+          <img
+            id="brand-logo"
+            class="logo-img"
+            src="https://i.postimg.cc/5ywQWkvn/IMG-9379.png"
+            alt="Refrigeração El Shaday - Refricom"
+            loading="eager"
+            onerror="this.style.display='none'"
+          />
+        </div>
+        <h1 id="brand-name" class="brand-title">Refrigeração El Shaday</h1>
+        <div class="brand-subtitle">Refricom • Manutenção Técnica</div>
+        <p id="brand-slogan" class="brand-slogan">Seu equipamento gelando de novo, com garantia</p>
+
+        <!-- Selos de Confiança -->
+        <div class="trust-badges">
+          <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+            Visita técnica rápida
+          </div>
+          <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            Garantia no serviço
+          </div>
+          <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+            Orçamento sem compromisso
+          </div>
+        </div>
+
+        <!-- Indicador de Status Aberto/Fechado -->
+        <button id="live-status-trigger" class="live-status-bar" onclick="openScheduleModal()">
+          <span class="status-indicator-dot" id="status-dot"></span>
+          <span id="status-text">Carregando status...</span>
+        </button>
+      </header>
+
+      <!-- 2. Botões Principais (Cards em Lista) -->
+      <main class="action-list">
+        <!-- 🛠️ DESTAQUE PRINCIPAL: Relatar Problema (Wizard) -->
+        <div class="action-card card-primary-featured" onclick="openIssueWizard()">
+          <span class="featured-badge">Mais Rápido</span>
+          <div class="card-left">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+            </div>
+            <div class="card-text">
+              <div class="card-title">Relatar Problema</div>
+              <div class="card-desc">Diagnóstico em minutos direto no WhatsApp</div>
+            </div>
+          </div>
+          <svg class="card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </div>
+
+        <!-- 📅 Agendar Visita Técnica -->
+        <div class="action-card" onclick="openScheduleVisitWizard()">
+          <div class="card-left">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+                <path d="m9 16 2 2 4-4" />
+              </svg>
+            </div>
+            <div class="card-text">
+              <div class="card-title">Agendar Visita Técnica</div>
+              <div class="card-desc">Escolha a data e o turno mais convenientes</div>
+            </div>
+          </div>
+          <svg class="card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </div>
+
+        <!-- 💬 Falar no WhatsApp -->
+        <a id="link-whatsapp" class="action-card card-whatsapp" href="https://wa.link/uy1fky" target="_blank" rel="noopener noreferrer">
+          <div class="card-left">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+            </div>
+            <div class="card-text">
+              <div class="card-title">Falar no WhatsApp</div>
+              <div class="card-desc">Atendimento e dúvidas com o técnico</div>
+            </div>
+          </div>
+          <svg class="card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+
+        <!-- 🚨 Atendimento Urgente -->
+        <div class="action-card card-urgent" onclick="triggerUrgentContact()">
+          <div class="card-left">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <div class="card-text">
+              <div class="card-title">Atendimento Urgente</div>
+              <div class="card-desc">Perdendo produtos ou câmara fria parada</div>
+            </div>
+          </div>
+          <svg class="card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </div>
+
+        <!-- 📸 Instagram -->
+        <a id="link-instagram" class="action-card card-instagram" href="https://www.instagram.com/el_shaday_refricom_?rpxt=b3VxcXk5MGd0eDlw" target="_blank" rel="noopener noreferrer">
+          <div class="card-left">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </div>
+            <div class="card-text">
+              <div class="card-title">Instagram Oficial</div>
+              <div class="card-desc">@el_shaday_refricom_ • Serviços e dicas</div>
+            </div>
+          </div>
+          <svg class="card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+
+        <!-- 📍 Como Chegar -->
+        <a id="link-maps" class="action-card" href="https://maps.app.goo.gl/y85zLTkbPC4iFSw66?g_st=ic" target="_blank" rel="noopener noreferrer">
+          <div class="card-left">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="card-text">
+              <div class="card-title">Como Chegar</div>
+              <div class="card-desc">Ver localização no Google Maps</div>
+            </div>
+          </div>
+          <svg class="card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+
+        <!-- 🕒 Horário de Funcionamento -->
+        <div class="action-card" onclick="openScheduleModal()">
+          <div class="card-left">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div class="card-text">
+              <div class="card-title">Horário de Funcionamento</div>
+              <div class="card-desc">Seg a Sex 07:30 - 18:00 • Plantão 24h</div>
+            </div>
+          </div>
+          <svg class="card-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </div>
+      </main>
+
+      <!-- 3. Seção: Equipamentos Especializados -->
+      <section class="specialties-section">
+        <div class="section-header">
+          <span class="section-title">Especialidades Técnicas</span>
+          <span class="section-caption">Residencial & Comercial</span>
+        </div>
+        <div class="specialties-grid">
+          <div class="spec-chip" onclick="quickSelectEquip('Geladeira / Refrigerador')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" />
+              <line x1="5" y1="10" x2="19" y2="10" />
+              <line x1="9" y1="6" x2="9" y2="7" />
+              <line x1="9" y1="14" x2="9" y2="16" />
+            </svg>
+            Geladeiras
+          </div>
+          <div class="spec-chip" onclick="quickSelectEquip('Freezer')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="16" rx="2" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+              <line x1="10" y1="7" x2="14" y2="7" />
+            </svg>
+            Freezers
+          </div>
+          <div class="spec-chip" onclick="quickSelectEquip('Ar-condicionado Split')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+              <path d="M12 12v9" />
+              <path d="m8 17 4 4 4-4" />
+            </svg>
+            Ar-Condicionado
+          </div>
+          <div class="spec-chip" onclick="quickSelectEquip('Câmara Fria')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m10 16 1.5 1.5" />
+              <path d="m14 8-1.5-1.5" />
+              <path d="M15 2c-1.35 1.5-2.092 3-2.5 4.5L12 10l-3.5-.5C7 9.092 5.5 8.35 4 7" />
+              <path d="m20 20-3.5-3.5L14 17l.5 2.5c.408 1.5 1.15 3 2.5 4.5" />
+              <path d="m2 2 20 20" />
+            </svg>
+            Câmaras Frias
+          </div>
+          <div class="spec-chip" onclick="quickSelectEquip('Balcão / Expositor refrigerado')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3h18v18H3z" />
+              <path d="M3 9h18" />
+              <path d="M9 21V9" />
+            </svg>
+            Balcões Comerciais
+          </div>
+          <div class="spec-chip" onclick="quickSelectEquip('Máquina de Gelo / Bebedouro')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20" />
+              <path d="m17 5-5 5-5-5" />
+              <path d="m17 19-5-5-5 5" />
+              <path d="M2 12h20" />
+              <path d="m5 7 5 5-5 5" />
+              <path d="m19 7-5 5 5 5" />
+            </svg>
+            Máquinas de Gelo
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Rodapé -->
+      <footer class="footer">
+        <div class="footer-location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span id="footer-city">Macapá & Santana - AP</span>
+        </div>
+        <div class="footer-copyright">
+          © <span id="current-year"></span> Refrigeração El Shaday - Refricom. Todos os direitos reservados.
+        </div>
+      </footer>
+    </div>
+
+    <!-- ============================================================
+         MODAL / BOTTOM SHEET: WIZARD MULTI-ETAPAS
+    ============================================================ -->
+    <div id="wizard-backdrop" class="modal-backdrop" onclick="handleBackdropClick(event)">
+      <div class="bottom-sheet" id="wizard-sheet">
+        <div class="sheet-handle-bar" onclick="closeWizard()">
+          <div class="sheet-pill"></div>
+        </div>
+
+        <div class="sheet-header">
+          <div class="sheet-header-title" id="wizard-main-title">Relatar Problema</div>
+          <button class="sheet-close-btn" onclick="closeWizard()" aria-label="Fechar modal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Indicador de Progresso -->
+        <div class="wizard-progress-bar-container" id="wizard-progress-area">
+          <div class="wizard-steps-indicator">
+            <span id="wizard-step-label">Etapa 1 de 5</span>
+            <span id="wizard-step-name" class="active">Equipamento</span>
+          </div>
+          <div class="wizard-track">
+            <div class="wizard-fill" id="wizard-fill-bar"></div>
+          </div>
+        </div>
+
+        <!-- Conteúdo do Formulário em Etapas -->
+        <div class="sheet-body" id="wizard-body">
+          <!-- ETAPA 1: EQUIPAMENTO -->
+          <div class="step-view active" id="step-1">
+            <div>
+              <div class="step-headline">Qual é o seu equipamento?</div>
+              <div class="step-subtext">Selecione o tipo do aparelho para direcionarmos o técnico certo.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Tipo de Equipamento *</label>
+              <div class="equipment-grid">
+                <button type="button" class="equip-btn selected" onclick="selectEquipment('Geladeira / Refrigerador', this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="5" y1="10" x2="19" y2="10"/><line x1="9" y1="6" x2="9" y2="7"/></svg>
+                  Geladeira
+                </button>
+                <button type="button" class="equip-btn" onclick="selectEquipment('Freezer', this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Freezer
+                </button>
+                <button type="button" class="equip-btn" onclick="selectEquipment('Ar-condicionado Split', this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="8" rx="2"/><line x1="6" y1="10" x2="10" y2="10"/></svg>
+                  Ar Split
+                </button>
+                <button type="button" class="equip-btn" onclick="selectEquipment('Ar-condicionado Janela', this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="12" x2="21" y2="12"/></svg>
+                  Ar Janela
+                </button>
+                <button type="button" class="equip-btn" onclick="selectEquipment('Bebedouro / Purificador', this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="m17 5-5 5-5-5"/></svg>
+                  Bebedouro
+                </button>
+                <button type="button" class="equip-btn" onclick="selectEquipment('Balcão / Expositor refrigerado', this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="11" x2="22" y2="11"/></svg>
+                  Balcão Comercial
+                </button>
+                <button type="button" class="equip-btn" onclick="selectEquipment('Câmara Fria', this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="m5 7 7 5 7-5"/><path d="m5 17 7-5 7 5"/></svg>
+                  Câmara Fria
+                </button>
+                <button type="button" class="equip-btn" onclick="selectEquipment('Máquina de Gelo', this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Máquina de Gelo
+                </button>
+                <button type="button" class="equip-btn" onclick="selectEquipment('Outro equipamento', this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                  Outro Equipamento
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Marca do Equipamento</label>
+              <div class="chips-container" style="margin-bottom: 8px;">
+                <span class="chip-btn" onclick="setBrandChip('Brastemp', this)">Brastemp</span>
+                <span class="chip-btn" onclick="setBrandChip('Electrolux', this)">Electrolux</span>
+                <span class="chip-btn" onclick="setBrandChip('Consul', this)">Consul</span>
+                <span class="chip-btn" onclick="setBrandChip('LG', this)">LG</span>
+                <span class="chip-btn" onclick="setBrandChip('Samsung', this)">Samsung</span>
+                <span class="chip-btn" onclick="setBrandChip('Midea', this)">Midea</span>
+                <span class="chip-btn" onclick="setBrandChip('Elgin', this)">Elgin</span>
+                <span class="chip-btn" onclick="setBrandChip('Gree', this)">Gree</span>
+                <span class="chip-btn" onclick="setBrandChip('Metalfrio', this)">Metalfrio</span>
+                <span class="chip-btn" onclick="setBrandChip('Gelopar', this)">Gelopar</span>
+              </div>
+              <input type="text" id="input-marca" class="form-input" placeholder="Ou digite a marca (ex: Consul, Panasonic...)" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Modelo (Opcional)</label>
+              <input type="text" id="input-modelo" class="form-input" placeholder="Ex: Inverter 12000 BTUs, Frost Free Duplex..." />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Tempo Aproximado de Uso</label>
+              <div class="chips-container">
+                <span class="chip-btn selected" onclick="setSingleChip('tempoUso', 'Menos de 1 ano', this)">Menos de 1 ano</span>
+                <span class="chip-btn" onclick="setSingleChip('tempoUso', '1 a 3 anos', this)">1 a 3 anos</span>
+                <span class="chip-btn" onclick="setSingleChip('tempoUso', '3 a 5 anos', this)">3 a 5 anos</span>
+                <span class="chip-btn" onclick="setSingleChip('tempoUso', 'Mais de 5 anos', this)">Mais de 5 anos</span>
+                <span class="chip-btn" onclick="setSingleChip('tempoUso', 'Não sei informar', this)">Não sei</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ETAPA 2: PROBLEMA & SINTOMAS -->
+          <div class="step-view" id="step-2">
+            <div>
+              <div class="step-headline">O que está acontecendo?</div>
+              <div class="step-subtext">Você pode selecionar um ou mais sintomas para facilitar a identificação.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Sintomas Observados (Selecione quantos quiser)</label>
+              <div class="chips-container" id="symptoms-chips">
+                <span class="chip-btn" onclick="toggleSymptom('Não gela / Gela pouco', this)">❄️ Não gela / Gela pouco</span>
+                <span class="chip-btn" onclick="toggleSymptom('Faz barulho estranho', this)">🔊 Faz barulho / Estalos</span>
+                <span class="chip-btn" onclick="toggleSymptom('Vazamento de água', this)">💧 Vazando água</span>
+                <span class="chip-btn" onclick="toggleSymptom('Congela demais / Placas de gelo', this)">🧊 Congelando demais</span>
+                <span class="chip-btn" onclick="toggleSymptom('Não liga / Sem sinal', this)">⚡ Não liga / Apagado</span>
+                <span class="chip-btn" onclick="toggleSymptom('Desarma o disjuntor', this)">🔌 Desarma o disjuntor</span>
+                <span class="chip-btn" onclick="toggleSymptom('Cheiro estranho / queimado', this)">👃 Cheiro estranho</span>
+                <span class="chip-btn" onclick="toggleSymptom('Ar só ventila / não esfria', this)">🌡️ Ar não esfria</span>
+                <span class="chip-btn" onclick="toggleSymptom('Código de erro no painel', this)">📟 Erro no painel</span>
+                <span class="chip-btn" onclick="toggleSymptom('Outro defeito', this)">❓ Outro sintoma</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Descrição Livre do Defeito</label>
+              <textarea id="input-descricao" class="form-textarea" placeholder="Descreva com suas palavras o que notou (ex: parou de gelar ontem à noite e o motor fica tentando ligar)..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Desde quando acontece?</label>
+              <div class="chips-container">
+                <span class="chip-btn selected" onclick="setSingleChip('desdeQuando', 'Hoje / Poucas horas', this)">Hoje / Poucas horas</span>
+                <span class="chip-btn" onclick="setSingleChip('desdeQuando', 'Há 2 a 3 dias', this)">Há 2 a 3 dias</span>
+                <span class="chip-btn" onclick="setSingleChip('desdeQuando', 'Há mais de uma semana', this)">Há mais de 1 semana</span>
+                <span class="chip-btn" onclick="setSingleChip('desdeQuando', 'Tem bastante tempo', this)">Tem bastante tempo</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Já foi consertado antes?</label>
+              <div class="chips-container">
+                <span class="chip-btn selected" onclick="setSingleChip('consertadoAntes', 'Não, primeira vez', this)">Não, primeira vez</span>
+                <span class="chip-btn" onclick="setSingleChip('consertadoAntes', 'Sim, já mexeram', this)">Sim, já passou por reparo</span>
+                <span class="chip-btn" onclick="setSingleChip('consertadoAntes', 'Não sei informar', this)">Não sei informar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ETAPA ESPECÍFICA DE AGENDAMENTO (SE ABERTO POR 'AGENDAR VISITA') -->
+          <div class="step-view" id="step-date">
+            <div>
+              <div class="step-headline">Qual a melhor data e período?</div>
+              <div class="step-subtext">Defina sua preferência para organizarmos a rota da equipe técnica.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Data da Visita *</label>
+              <input type="date" id="input-data-visita" class="form-input" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Período Preferido *</label>
+              <div class="chips-container">
+                <span class="chip-btn selected" onclick="setSingleChip('periodoVisita', 'Manhã (08h às 12h)', this)">☀️ Manhã (08h às 12h)</span>
+                <span class="chip-btn" onclick="setSingleChip('periodoVisita', 'Tarde (13h às 17h)', this)">🌤️ Tarde (13h às 17h)</span>
+                <span class="chip-btn" onclick="setSingleChip('periodoVisita', 'Final da Tarde (17h às 19h)', this)">🕒 Final de Tarde (17h às 19h)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ETAPA 3: NÍVEL DE URGÊNCIA -->
+          <div class="step-view" id="step-3">
+            <div>
+              <div class="step-headline">Qual a urgência do chamado?</div>
+              <div class="step-subtext">Isso nos ajuda a priorizar o deslocamento da nossa equipe.</div>
+            </div>
+
+            <div class="urgency-cards">
+              <div class="urgency-card selected" data-level="normal" onclick="selectUrgency('Normal', this)">
+                <div class="urgency-card-info">
+                  <div class="urgency-card-icon" style="background: rgba(0, 210, 255, 0.15); color: #00d2ff;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                  </div>
+                  <div>
+                    <div class="urgency-card-title">Normal</div>
+                    <div class="urgency-card-desc">Posso aguardar agendamento programado</div>
+                  </div>
+                </div>
+                <div class="check-circle"></div>
+              </div>
+
+              <div class="urgency-card" data-level="urgente" onclick="selectUrgency('Urgente', this)">
+                <div class="urgency-card-info">
+                  <div class="urgency-card-icon" style="background: rgba(245, 158, 11, 0.18); color: #f59e0b;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22 12 2"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                  </div>
+                  <div>
+                    <div class="urgency-card-title">Urgente</div>
+                    <div class="urgency-card-desc">Perdendo produtos/alimentos ou calor intenso</div>
+                  </div>
+                </div>
+                <div class="check-circle"></div>
+              </div>
+
+              <div class="urgency-card" data-level="emergencia" onclick="selectUrgency('Emergência', this)">
+                <div class="urgency-card-info">
+                  <div class="urgency-card-icon" style="background: rgba(239, 68, 68, 0.2); color: #ef4444;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  </div>
+                  <div>
+                    <div class="urgency-card-title">Emergência</div>
+                    <div class="urgency-card-desc">Câmara fria / comércio parado com alto prejuízo</div>
+                  </div>
+                </div>
+                <div class="check-circle"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ETAPA 4: DADOS DO CLIENTE & LOCALIZAÇÃO -->
+          <div class="step-view" id="step-4">
+            <div>
+              <div class="step-headline">Seus dados para contato</div>
+              <div class="step-subtext">Para identificação e cálculo da rota de atendimento.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Seu Nome Completo *</label>
+              <input type="text" id="input-nome" class="form-input" placeholder="Ex: Carlos Silva" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">WhatsApp com DDD *</label>
+              <input type="tel" id="input-telefone" class="form-input" placeholder="(96) 99999-9999" maxlength="15" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Tipo de Local *</label>
+              <div class="chips-container">
+                <span class="chip-btn selected" onclick="setSingleChip('tipoLocal', 'Residência', this)">🏠 Residência</span>
+                <span class="chip-btn" onclick="setSingleChip('tipoLocal', 'Comércio / Restaurante', this)">🏪 Comércio / Restaurante</span>
+                <span class="chip-btn" onclick="setSingleChip('tipoLocal', 'Empresa / Indústria', this)">🏢 Empresa / Indústria</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Endereço Completo, Bairro e Referência *</label>
+              <textarea id="input-endereco" class="form-textarea" placeholder="Rua, Número, Bairro, Cidade e Ponto de Referência..."></textarea>
+            </div>
+          </div>
+
+          <!-- ETAPA 5: RESUMO & ENVIO -->
+          <div class="step-view" id="step-5">
+            <div>
+              <div class="step-headline">Revise seu chamado</div>
+              <div class="step-subtext">Confira os dados antes de abrir a conversa no WhatsApp da Refricom.</div>
+            </div>
+
+            <div class="summary-box" id="summary-content">
+              <!-- Preenchido via JavaScript dinamicamente -->
+            </div>
+          </div>
+
+          <!-- ETAPA 6: SUCESSO -->
+          <div class="step-view" id="step-success">
+            <div class="success-view">
+              <div class="success-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </div>
+
+              <div class="success-title">Chamado Pronto para Envio!</div>
+
+              <div class="success-callout">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <div>
+                  <strong>Dica importante:</strong> Para agilizar o diagnóstico e orçamento, <strong>anexe uma foto ou vídeo curto do equipamento/defeito</strong> diretamente na conversa do WhatsApp.
+                </div>
+              </div>
+
+              <div style="width: 100%; display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+                <button class="btn btn-whatsapp-send" id="btn-reopen-whatsapp" onclick="reopenGeneratedWhatsapp()">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                  </svg>
+                  Abrir WhatsApp novamente
+                </button>
+                <button class="btn btn-secondary" onclick="closeWizard()">
+                  Voltar ao Início
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ações do Rodapé do Wizard -->
+        <div class="sheet-footer-actions" id="wizard-footer-actions">
+          <button class="btn btn-secondary" id="btn-wizard-prev" onclick="goToPrevStep()">
+            Voltar
+          </button>
+          <button class="btn btn-primary" id="btn-wizard-next" onclick="goToNextStep()">
+            Avançar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         MODAL: HORÁRIO DE FUNCIONAMENTO & EMERGÊNCIAS
+    ============================================================ -->
+    <div id="schedule-backdrop" class="modal-backdrop" onclick="handleScheduleBackdropClick(event)">
+      <div class="bottom-sheet" style="max-height: 80vh;">
+        <div class="sheet-handle-bar" onclick="closeScheduleModal()">
+          <div class="sheet-pill"></div>
+        </div>
+        <div class="sheet-header">
+          <div class="sheet-header-title">Horário de Atendimento</div>
+          <button class="sheet-close-btn" onclick="closeScheduleModal()" aria-label="Fechar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+        <div class="sheet-body">
+          <div id="schedule-status-banner" style="padding: 12px 14px; border-radius: 12px; background: rgba(0, 210, 255, 0.1); border: 1px solid rgba(0, 210, 255, 0.3); font-size: 0.85rem; font-weight: 600; color: #e0f2fe; display: flex; align-items: center; gap: 8px;">
+            <span class="status-indicator-dot" style="background-color: #10b981;"></span>
+            <span id="modal-status-text">Calculando status atual...</span>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div class="schedule-item">
+              <span class="schedule-day">Segunda a Sexta</span>
+              <span class="schedule-hours" id="sched-seg-sex">07h30 às 18h00</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-day">Sábado</span>
+              <span class="schedule-hours" id="sched-sab">08h00 às 13h00</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-day">Domingos e Feriados</span>
+              <span class="schedule-hours">Plantão sob consulta</span>
+            </div>
+            <div class="schedule-item schedule-highlight">
+              <span class="schedule-day">🚨 Plantão de Emergência</span>
+              <span class="schedule-hours" id="sched-emergencia">24 Horas</span>
+            </div>
+          </div>
+
+          <div style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; background: rgba(13, 29, 44, 0.5); padding: 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+            * O atendimento de emergência é prioritário para câmaras frias, supermercados, açougues e restaurantes com risco de perda de mercadorias.
+          </div>
+
+          <a href="https://wa.link/uy1fky" target="_blank" class="btn btn-primary" style="width: 100%; text-decoration: none;">
+            Falar com Atendente Agora
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SCRIPT INLINE (CONFIGURAÇÕES E LÓGICA DO BIOSITE)
+    ============================================================ -->
+    <script>
+      /**
+       * CONFIGURAÇÃO CENTRAL DA EMPRESA
+       * Todos os dados, links e horários concentrados aqui para fácil manutenção.
+       */
+      const CONFIG = {
+        nome: "Refrigeração El Shaday - Refricom",
+        slogan: "Seu equipamento gelando de novo, com garantia",
+        logo: "https://i.postimg.cc/5ywQWkvn/IMG-9379.png",
+        whatsappLink: "https://wa.link/uy1fky",
+        whatsappNumero: "5596991386096",
+        instagram: "https://www.instagram.com/el_shaday_refricom_?rpxt=b3VxcXk5MGd0eDlw",
+        maps: "https://maps.app.goo.gl/y85zLTkbPC4iFSw66?g_st=ic",
+        
+        // [PLACEHOLDERS EDITÁVEIS]
+        horarioAtendimento: "Segunda a Sexta: 07h30 às 18h00 | Sábado: 08h00 às 13h00",
+        atendimentoEmergencia: "Plantão 24h para câmaras frias, comércios e paradas críticas",
+        
+        cidade: "Macapá / Santana - AP",
+        mensagemUrgenciaPronta: "🚨 *ATENDIMENTO DE URGÊNCIA - Refricom*\nOlá! Estou com uma emergência de refrigeração (equipamento parado/perdendo mercadorias) e preciso de socorro técnico urgente!"
+      };
+
+      /**
+       * ESTADO DO FORMULÁRIO WIZARD
+       */
+      const formState = {
+        mode: "problema", // 'problema' ou 'agendamento'
+        currentStepIndex: 0,
+        steps: ["step-1", "step-2", "step-3", "step-4", "step-5"],
+        
+        // Dados coletados
+        equipamento: "Geladeira / Refrigerador",
+        marca: "",
+        modelo: "",
+        tempoUso: "Menos de 1 ano",
+        sintomas: [],
+        descricao: "",
+        desdeQuando: "Hoje / Poucas horas",
+        consertadoAntes: "Não, primeira vez",
+        urgencia: "Normal",
+        
+        // Dados de agendamento (quando mode === 'agendamento')
+        dataVisita: "",
+        periodoVisita: "Manhã (08h às 12h)",
+        
+        // Dados do cliente
+        nome: "",
+        telefone: "",
+        tipoLocal: "Residência",
+        endereco: "",
+        
+        lastGeneratedUrl: ""
+      };
+
+      // Inicialização ao carregar o DOM
+      document.addEventListener("DOMContentLoaded", () => {
+        applyConfigToDOM();
+        initScheduleCheck();
+        initPhoneMask();
+        initDatePicker();
+      });
+
+      function applyConfigToDOM() {
+        document.getElementById("brand-logo").src = CONFIG.logo;
+        document.getElementById("brand-slogan").textContent = CONFIG.slogan;
+        document.getElementById("link-whatsapp").href = CONFIG.whatsappLink;
+        document.getElementById("link-instagram").href = CONFIG.instagram;
+        document.getElementById("link-maps").href = CONFIG.maps;
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+      }
+
+      /**
+       * Verificador em tempo real do status de funcionamento (Fuso Amapá UTC-3)
+       */
+      function initScheduleCheck() {
+        const updateStatus = () => {
+          // Obter data/hora local no fuso horário do Amapá (America/Belem / UTC-3)
+          const now = new Date();
+          const day = now.getDay(); // 0: Dom, 1: Seg ... 6: Sab
+          const hours = now.getHours();
+          const minutes = now.getMinutes();
+          const currentTime = hours * 60 + minutes;
+
+          let isOpen = false;
+          let statusLabel = "";
+
+          if (day >= 1 && day <= 5) {
+            // Seg a Sex: 07:30 (450m) às 18:00 (1080m)
+            if (currentTime >= 450 && currentTime < 1080) {
+              isOpen = true;
+              statusLabel = "Aberto agora • Atendimento até 18h00";
+            } else {
+              isOpen = false;
+              statusLabel = "Fechado agora • Plantão de emergência ativo";
+            }
+          } else if (day === 6) {
+            // Sab: 08:00 (480m) às 13:00 (780m)
+            if (currentTime >= 480 && currentTime < 780) {
+              isOpen = true;
+              statusLabel = "Aberto agora • Atendimento até 13h00";
+            } else {
+              isOpen = false;
+              statusLabel = "Fechado agora • Plantão de emergência ativo";
+            }
+          } else {
+            // Domingo
+            isOpen = false;
+            statusLabel = "Fechado hoje • Plantão 24h para emergências";
+          }
+
+          const statusText = document.getElementById("status-text");
+          const statusDot = document.getElementById("status-dot");
+          const modalStatusText = document.getElementById("modal-status-text");
+
+          if (statusText) statusText.textContent = statusLabel;
+          if (modalStatusText) modalStatusText.textContent = statusLabel;
+
+          if (statusDot) {
+            if (isOpen) {
+              statusDot.style.backgroundColor = "#10b981";
+              statusDot.style.boxShadow = "0 0 8px #10b981";
+            } else {
+              statusDot.style.backgroundColor = "#f59e0b";
+              statusDot.style.boxShadow = "0 0 8px #f59e0b";
+            }
+          }
+        };
+
+        updateStatus();
+        setInterval(updateStatus, 60000);
+      }
+
+      /**
+       * Máscara automática de telefone celular brasileiro (96) 99999-9999
+       */
+      function initPhoneMask() {
+        const input = document.getElementById("input-telefone");
+        if (!input) return;
+
+        input.addEventListener("input", (e) => {
+          let val = e.target.value.replace(/\D/g, "");
+          if (val.length > 11) val = val.slice(0, 11);
+
+          if (val.length > 6) {
+            e.target.value = `(${val.slice(0, 2)}) ${val.slice(2, 7)}-${val.slice(7)}`;
+          } else if (val.length > 2) {
+            e.target.value = `(${val.slice(0, 2)}) ${val.slice(2)}`;
+          } else if (val.length > 0) {
+            e.target.value = `(${val}`;
+          }
+        });
+      }
+
+      /**
+       * Inicializa o DatePicker para bloquear datas no passado
+       */
+      function initDatePicker() {
+        const dateInput = document.getElementById("input-data-visita");
+        if (!dateInput) return;
+        const today = new Date().toISOString().split("T")[0];
+        dateInput.min = today;
+      }
+
+      /**
+       * Botão "🚨 Atendimento Urgente": abre WhatsApp diretamente com mensagem formatada
+       */
+      window.triggerUrgentContact = function() {
+        const url = `https://wa.me/${CONFIG.whatsappNumero}?text=${encodeURIComponent(CONFIG.mensagemUrgenciaPronta)}`;
+        window.open(url, "_blank");
+      };
+
+      /**
+       * Abertura do Modal de Horários
+       */
+      window.openScheduleModal = function() {
+        const modal = document.getElementById("schedule-backdrop");
+        if (modal) modal.classList.add("active");
+      };
+
+      window.closeScheduleModal = function() {
+        const modal = document.getElementById("schedule-backdrop");
+        if (modal) modal.classList.remove("active");
+      };
+
+      window.handleScheduleBackdropClick = function(e) {
+        if (e.target.id === "schedule-backdrop") {
+          closeScheduleModal();
+        }
+      };
+
+      /**
+       * WIZARD: Abertura e Modos
+       */
+      window.openIssueWizard = function() {
+        formState.mode = "problema";
+        formState.steps = ["step-1", "step-2", "step-3", "step-4", "step-5"];
+        document.getElementById("wizard-main-title").textContent = "Relatar Problema";
+        setupWizardSteps();
+        showModal();
+      };
+
+      window.openScheduleVisitWizard = function() {
+        formState.mode = "agendamento";
+        formState.steps = ["step-1", "step-2", "step-date", "step-3", "step-4", "step-5"];
+        document.getElementById("wizard-main-title").textContent = "Agendar Visita Técnica";
+        
+        // Data padrão como amanhã
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const tomorrowStr = tomorrow.toISOString().split("T")[0];
+        const dateInput = document.getElementById("input-data-visita");
+        if (dateInput && !dateInput.value) {
+          dateInput.value = tomorrowStr;
+        }
+
+        setupWizardSteps();
+        showModal();
+      };
+
+      window.quickSelectEquip = function(equipName) {
+        openIssueWizard();
+        selectEquipment(equipName);
+      };
+
+      function showModal() {
+        const modal = document.getElementById("wizard-backdrop");
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      window.closeWizard = function() {
+        const modal = document.getElementById("wizard-backdrop");
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+      };
+
+      window.handleBackdropClick = function(e) {
+        if (e.target.id === "wizard-backdrop") {
+          closeWizard();
+        }
+      };
+
+      function setupWizardSteps() {
+        formState.currentStepIndex = 0;
+        renderCurrentStep();
+      }
+
+      function renderCurrentStep() {
+        const totalSteps = formState.steps.length;
+        const currentIdx = formState.currentStepIndex;
+        const currentStepId = formState.steps[currentIdx];
+
+        // Ocultar todos os passos
+        document.querySelectorAll(".step-view").forEach(el => el.classList.remove("active"));
+        
+        // Exibir o passo atual
+        const currentEl = document.getElementById(currentStepId);
+        if (currentEl) currentEl.classList.add("active");
+
+        // Atualizar barra de progresso
+        const progressArea = document.getElementById("wizard-progress-area");
+        const footerActions = document.getElementById("wizard-footer-actions");
+
+        if (currentStepId === "step-success") {
+          progressArea.style.display = "none";
+          footerActions.style.display = "none";
+          return;
+        }
+
+        progressArea.style.display = "block";
+        footerActions.style.display = "flex";
+
+        const stepPercentage = ((currentIdx + 1) / totalSteps) * 100;
+        document.getElementById("wizard-fill-bar").style.width = `${stepPercentage}%`;
+        document.getElementById("wizard-step-label").textContent = `Etapa ${currentIdx + 1} de ${totalSteps}`;
+
+        // Nomes das etapas
+        const stepNames = {
+          "step-1": "Equipamento",
+          "step-2": "Sintomas",
+          "step-date": "Data & Turno",
+          "step-3": "Urgência",
+          "step-4": "Seus Dados",
+          "step-5": "Confirmação"
+        };
+        document.getElementById("wizard-step-name").textContent = stepNames[currentStepId] || "";
+
+        // Botão anterior
+        const prevBtn = document.getElementById("btn-wizard-prev");
+        if (currentIdx === 0) {
+          prevBtn.style.display = "none";
+        } else {
+          prevBtn.style.display = "inline-flex";
+        }
+
+        // Botão avançar / enviar
+        const nextBtn = document.getElementById("btn-wizard-next");
+        if (currentIdx === totalSteps - 1) {
+          nextBtn.textContent = "Enviar no WhatsApp";
+          nextBtn.className = "btn btn-whatsapp-send";
+          nextBtn.innerHTML = `
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+            Enviar no WhatsApp
+          `;
+          renderSummary();
+        } else {
+          nextBtn.textContent = "Avançar";
+          nextBtn.className = "btn btn-primary";
+          nextBtn.innerHTML = `
+            Avançar
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          `;
+        }
+
+        // Rolagem para o topo do sheet-body
+        document.getElementById("wizard-body").scrollTop = 0;
+      }
+
+      window.goToNextStep = function() {
+        const currentStepId = formState.steps[formState.currentStepIndex];
+
+        // Validações por etapa
+        if (currentStepId === "step-1") {
+          const customMarca = document.getElementById("input-marca").value.trim();
+          if (customMarca) formState.marca = customMarca;
+          formState.modelo = document.getElementById("input-modelo").value.trim();
+        } else if (currentStepId === "step-2") {
+          formState.descricao = document.getElementById("input-descricao").value.trim();
+        } else if (currentStepId === "step-date") {
+          const dateVal = document.getElementById("input-data-visita").value;
+          if (!dateVal) {
+            alert("Por favor, selecione uma data preferida para a visita.");
+            return;
+          }
+          formState.dataVisita = dateVal;
+        } else if (currentStepId === "step-4") {
+          const nome = document.getElementById("input-nome").value.trim();
+          const tel = document.getElementById("input-telefone").value.trim();
+          const end = document.getElementById("input-endereco").value.trim();
+
+          if (!nome) {
+            alert("Por favor, informe seu nome.");
+            document.getElementById("input-nome").focus();
+            return;
+          }
+          if (!tel || tel.length < 13) {
+            alert("Por favor, informe seu telefone com DDD.");
+            document.getElementById("input-telefone").focus();
+            return;
+          }
+          if (!end) {
+            alert("Por favor, informe o endereço completo e bairro.");
+            document.getElementById("input-endereco").focus();
+            return;
+          }
+
+          formState.nome = nome;
+          formState.telefone = tel;
+          formState.endereco = end;
+        } else if (currentStepId === "step-5") {
+          // Dispara envio no WhatsApp
+          submitToWhatsapp();
+          return;
+        }
+
+        if (formState.currentStepIndex < formState.steps.length - 1) {
+          formState.currentStepIndex++;
+          renderCurrentStep();
+        }
+      };
+
+      window.goToPrevStep = function() {
+        if (formState.currentStepIndex > 0) {
+          formState.currentStepIndex--;
+          renderCurrentStep();
+        }
+      };
+
+      /**
+       * Funções de seleção de chips e botões
+       */
+      window.selectEquipment = function(name, btnElement) {
+        formState.equipamento = name;
+        document.querySelectorAll(".equip-btn").forEach(el => el.classList.remove("selected"));
+        if (btnElement) {
+          btnElement.classList.add("selected");
+        } else {
+          // Selecionar pelo texto se clicado externamente
+          document.querySelectorAll(".equip-btn").forEach(el => {
+            if (el.textContent.includes(name.split(" ")[0])) {
+              el.classList.add("selected");
+            }
+          });
+        }
+      };
+
+      window.setBrandChip = function(brand, element) {
+        document.getElementById("input-marca").value = brand;
+        formState.marca = brand;
+        element.parentElement.querySelectorAll(".chip-btn").forEach(c => c.classList.remove("selected"));
+        element.classList.add("selected");
+      };
+
+      window.setSingleChip = function(key, val, element) {
+        formState[key] = val;
+        element.parentElement.querySelectorAll(".chip-btn").forEach(c => c.classList.remove("selected"));
+        element.classList.add("selected");
+      };
+
+      window.toggleSymptom = function(symptom, element) {
+        const index = formState.sintomas.indexOf(symptom);
+        if (index > -1) {
+          formState.sintomas.splice(index, 1);
+          element.classList.remove("selected");
+        } else {
+          formState.sintomas.push(symptom);
+          element.classList.add("selected");
+        }
+      };
+
+      window.selectUrgency = function(level, element) {
+        formState.urgencia = level;
+        document.querySelectorAll(".urgency-card").forEach(c => c.classList.remove("selected"));
+        element.classList.add("selected");
+      };
+
+      /**
+       * Renderiza o resumo na etapa 5
+       */
+      function renderSummary() {
+        const summary = document.getElementById("summary-content");
+        const sintomasText = formState.sintomas.length > 0 ? formState.sintomas.join(", ") : "Não especificado";
+        const descText = formState.descricao ? ` - "${formState.descricao}"` : "";
+        const marcaModelo = [formState.marca, formState.modelo].filter(Boolean).join(" ") || "Não informada";
+
+        let dateRow = "";
+        if (formState.mode === "agendamento" && formState.dataVisita) {
+          const [ano, mes, dia] = formState.dataVisita.split("-");
+          const dataFormatada = `${dia}/${mes}/${ano}`;
+          dateRow = `
+            <div class="summary-item">
+              <span class="summary-label">🗓️ Data preferida:</span>
+              <span class="summary-val text-cyan">${dataFormatada} (${formState.periodoVisita})</span>
+            </div>
+          `;
+        }
+
+        summary.innerHTML = `
+          <div class="summary-item">
+            <span class="summary-label">👤 Cliente:</span>
+            <span class="summary-val">${formState.nome}</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">📞 Telefone:</span>
+            <span class="summary-val">${formState.telefone}</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">🏠 Local:</span>
+            <span class="summary-val">${formState.tipoLocal}</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">📍 Endereço:</span>
+            <span class="summary-val">${formState.endereco}</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">❄️ Equipamento:</span>
+            <span class="summary-val">${formState.equipamento} (${marcaModelo})</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">⚠️ Defeito:</span>
+            <span class="summary-val">${sintomasText}${descText}</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">⏱️ Desde quando:</span>
+            <span class="summary-val">${formState.desdeQuando}</span>
+          </div>
+          ${dateRow}
+          <div class="summary-item">
+            <span class="summary-label">🚨 Urgência:</span>
+            <span class="summary-val" style="${formState.urgencia !== 'Normal' ? 'color: #f87171;' : ''}">${formState.urgencia}</span>
+          </div>
+        `;
+      }
+
+      /**
+       * GERAÇÃO DA MENSAGEM DO WHATSAPP CONFORME MODELO ESPECIFICADO
+       */
+      function submitToWhatsapp() {
+        const sintomasText = formState.sintomas.length > 0 ? formState.sintomas.join(", ") : "Não especificado";
+        const descricaoText = formState.descricao ? ` - ${formState.descricao}` : "";
+        const marcaModelo = [formState.marca, formState.modelo].filter(Boolean).join(" ");
+        const equipCompleto = `${formState.equipamento}${marcaModelo ? ' ' + marcaModelo : ''}`;
+
+        let mensagem = "";
+
+        if (formState.mode === "agendamento") {
+          let dataFormatada = formState.dataVisita;
+          if (formState.dataVisita) {
+            const [ano, mes, dia] = formState.dataVisita.split("-");
+            dataFormatada = `${dia}/${mes}/${ano}`;
+          }
+
+          mensagem = `📅 *AGENDAMENTO DE VISITA TÉCNICA - Refricom*
+👤 Cliente: ${formState.nome}
+📞 Telefone: ${formState.telefone}
+🏠 Local: ${formState.tipoLocal}
+📍 Endereço: ${formState.endereco}
+❄️ Equipamento: ${equipCompleto}
+⚠️ Problema: ${sintomasText}${descricaoText}
+🗓️ Data preferida: ${dataFormatada} (${formState.periodoVisita})
+🚨 Urgência: ${formState.urgencia}
+Posso enviar fotos/vídeo do equipamento por aqui.`;
+        } else {
+          mensagem = `🔧 *NOVO CHAMADO - Refricom*
+👤 Cliente: ${formState.nome}
+📞 Telefone: ${formState.telefone}
+🏠 Local: ${formState.tipoLocal}
+📍 Endereço: ${formState.endereco}
+❄️ Equipamento: ${equipCompleto}
+⚠️ Problema: ${sintomasText}${descricaoText}
+⏱️ Desde quando: ${formState.desdeQuando}
+🚨 Urgência: ${formState.urgencia}
+Posso enviar fotos/vídeo do equipamento por aqui.`;
+        }
+
+        const whatsappUrl = `https://wa.me/${CONFIG.whatsappNumero}?text=${encodeURIComponent(mensagem)}`;
+        formState.lastGeneratedUrl = whatsappUrl;
+
+        // Abre a conversa no WhatsApp
+        window.open(whatsappUrl, "_blank");
+
+        // Mostra a tela de sucesso no modal
+        document.querySelectorAll(".step-view").forEach(el => el.classList.remove("active"));
+        document.getElementById("step-success").classList.add("active");
+        document.getElementById("wizard-progress-area").style.display = "none";
+        document.getElementById("wizard-footer-actions").style.display = "none";
+      }
+
+      window.reopenGeneratedWhatsapp = function() {
+        if (formState.lastGeneratedUrl) {
+          window.open(formState.lastGeneratedUrl, "_blank");
+        } else {
+          window.open(CONFIG.whatsappLink, "_blank");
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Refrigeração El Shaday - Refricom",
+  "description": "Biosite premium mobile-first para Refrigeração El Shaday - Refricom: manutenção técnica especializada em geladeiras, ar condicionado, câmaras frias e agendamento de chamados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
